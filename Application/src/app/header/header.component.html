@@ -1,0 +1,42 @@
+<header>
+  <script>
+    $(document).ready(function() {
+      $(".mob-menu span").click(function(){
+         $(".main-menu").slideToggle();
+        });
+     });
+  </script>
+  <div class="container">
+     <div class="row">
+        <div class="col-md-10 col-sm-10 col-lg-10 col-xl-3 ">
+           <div class="logo">
+            <div class="header">
+               <img src="./assets/logo.png" alt="logo" />
+               <h1>Producteev</h1>
+             </div>
+           </div>
+           <div class="mob-menu">
+              <span>
+                 <i class="fa fa-bars"></i>
+              </span>
+           </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-lg-12 col-xl-9">
+           <div class="main-menu">
+              <ul class="nav">
+                 <li><a href="/"> Home </a> </li>
+                 <li><a href="#about"> About Us </a> </li>
+                <li><a href="#contact"> Contact Us </a> </li>
+                 </ul>
+              <ul class="right-nav">
+                <button  class="ml" (click)="onClick(log)" style=" background-color: #2346D0;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;"> <i class="fa fa-user"></i> Log in</button>
+                &nbsp;
+                <button  class="ml" (click)="onClickReg(reg)" style=" background-color: #2346D0;border: none;color: white;padding: 15px 32px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;margin: 4px 2px;cursor: pointer;"> <i class=" fa-sign-in "></i> Sign Up</button>
+              </ul>
+           </div>
+        </div>
+     </div>
+  </div>
+
+
+</header>
